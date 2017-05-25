@@ -1,0 +1,450 @@
+/*===============================
+=            GLOBNAL            =
+===============================*/
+
+#masthead {
+	position: relative;
+	float: left;
+	width: 100%;
+	background: #FDE5BF;
+
+	.caption {
+		position: relative;
+		width: 100%;
+		padding-left: 15px;
+
+		// height: 170px;
+		background-image: url(assets/images/inner-image.svg);
+		background-repeat: no-repeat;
+		background-position-x: 112%;
+		background-position-y: 44%;
+		background-size: 62%;
+
+		@include media ($medium-screen-up) {
+			// height: 240px;
+			background-position-x: 112%;
+			background-position-y: 44%;
+			background-size: 64%;
+			padding-left: 10%;
+
+		}
+
+		@include media ($large-screen-up) {
+			// height: 450px;
+			background-position-x: 142%;
+			background-position-y: 23%;
+			background-size: 72%;
+		}
+
+		.half {
+			width: 50%;
+			padding: 30px 0;
+		}
+
+		img {
+			width: 50%;
+			display: block;
+
+			@include media ($large-screen-up) {
+				width: 50%;
+			}
+		}
+
+		.copy {
+			margin-top: 15px;
+			display: none;
+
+			@include media ($large-screen-up) {
+				display: block;
+			}
+
+			@include media ($large-screen-up) {
+				margin-top: 30px;
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 1.2;
+				font-weight: 400;
+				color: $brand-primary;
+				margin-bottom: 0;
+
+				@include media ($medium-screen-up) {
+					font-size: 30px;
+				}
+
+				@include media ($large-screen-up) {
+					font-size: 40px;
+				}
+			}
+
+			a {
+				display: inline-block;;
+				margin-top: 30px;
+				background: white;
+				color: $brand-primary;
+				text-transform: uppercase;
+				padding: 10px 15px;
+				border-radius: 5px;
+				font-size: 14px;
+				font-weight: 500;
+				display: none;
+
+				@include media ($large-screen-up) {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+#content {
+	float: left;
+	width: 100%;
+}
+
+
+#colophon {
+	background: $brand-primary;
+	text-align: center;
+	color: white;
+	padding: 20px;
+	float: left;
+	width: 100%;
+
+	img {
+		display: block;
+		width: 84px;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	a {
+		color: white;
+		font-weight: 600;
+	}
+}
+
+h1 {
+	margin: 0;
+	font-weight: 400;
+	color: $brand-primary;
+	font-size: 40px;
+
+	line-height: 1;
+	margin-bottom: 10px;
+
+	@include media ($medium-screen-up) {
+		font-size: 50px;
+		line-height: 1.2;
+		margin-bottom: 0;
+	}
+}
+
+h2 {
+	font-size: 20px;
+	margin: 0;
+	margin-bottom: 20px;
+	font-weight: 600;
+	color: $brand-primary;
+	line-height: 1.2;
+
+	@include media ($medium-screen-up) {
+		font-size: 30px;
+	}
+}
+
+.entry-content {
+
+	p {
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.cta {
+	padding: 35px 0;
+	position: relative;
+	text-align: center;
+
+	@include media ($medium-screen-up) {
+		padding: 70px 0;
+		text-align: left;
+	}
+
+	@include media ($large-screen-up) {
+		padding: 150px 0;
+	}
+
+	&:before {
+		content:"";
+		position: absolute;
+		background-color: #adabab;
+		background-image: url('assets/images/tentacle-g.svg');
+		background-repeat: no-repeat;
+		background-size: 80%;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		transform: rotate(180deg);
+		transform: scaleX(-1);
+		background-position: 100% 50%;
+		z-index: -1;
+
+		@include media ($large-screen-up) {
+			background-size: 40%;
+		}
+	}
+
+	p {
+		color: $brand-primary;
+	}
+
+	a {
+		background-color: $brand-primary;
+		color: white;
+		text-transform: uppercase;
+		font-size: 14px;
+		padding: 10px 15px;
+		border-radius: 5px;
+		font-weight: 600;
+	}
+}
+
+
+/*=============================
+=            PAGES            =
+=============================*/
+
+.page {
+
+	#primary {
+
+		header {	
+			padding: 40px 0 20px 0;
+
+			h1 {
+				text-transform: uppercase;
+			}
+		}
+
+		.entry-content {
+			padding: 0 0 40px 0;
+			float: left;
+			width: 100%;
+
+			ul {
+				margin-top: 20px;
+				list-style: none;
+				margin-left: 0;
+			}
+
+			.span6 {
+
+				&:first-of-type {
+
+					@include media ($large-screen-up) {
+						padding-right: 20px;
+						border-right: 1px solid #333;
+					}
+				}
+			}
+
+			.second-col {
+				margin-top: 20px;
+
+				@include media ($large-screen-up) {
+					margin-top: 0;
+				}
+
+				h1, h2, h3, h4, h5, h6, p, a, ul, li {
+					color: $brand-primary;
+				}
+
+				ul {
+					margin-top: 15px;
+					margin-left: 30px;
+					list-style-type: disc;
+				}
+			}
+		}	
+	}
+}
+
+
+
+/*=============================
+=            HOME             =
+=============================*/
+
+.home {
+
+	#masthead {
+
+		.caption {
+			background-image: url(assets/images/home-image.svg);
+			background-repeat: no-repeat;
+			background-position-x: 100%;
+			background-position-y: 10px;
+			background-size: 70%;
+
+			@include media ($medium-screen-up) {
+				background-position-y: 10px;
+				background-size: 57%;
+			}
+
+			@include media ($large-screen-up) {
+				background-position-y: 40px;
+				background-size: 67%;
+			}
+
+			@include media ($xlarge-screen-up) {
+			}
+
+			img {
+				width: 50%;
+				display: block;
+	
+				@include media ($large-screen-up) {
+					width: 35%;
+				}
+			}
+
+
+		}
+	}
+
+	#primary {
+		
+		@include media ($medium-screen-up) {
+			background-image: url('assets/images/tentacle-g.svg');
+			background-position: right center;
+			background-repeat: no-repeat;
+			background-size: 560px auto;
+		}
+
+		.entry-content {
+			padding: 40px 0;
+			text-align: center;
+
+			@include media ($medium-screen-up) {
+				text-align: left;
+			}
+
+			h1 {
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.columns {
+		float: left;
+		width: 100%;
+
+		.column {
+			width: 100%;
+			float: left;
+			text-align: center;
+			color: white;
+			height: 490px;
+			position: relative;;
+			background-color: #696969;
+			overflow: hidden;
+
+			@include media ($medium-screen-up) {
+				height: 580px;
+				width: 33.333%;
+			}
+
+			@include media ($large-screen-up) {
+				width: 33.333%;
+				height: 430px;
+			}
+
+			&:before {
+				content:"";
+				position: absolute;
+				background-image: url('assets/images/tentacle-l-up.svg');
+				background-repeat: no-repeat;
+				background-size: 50%;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-position: center bottom;
+
+				@include media ($large-screen-up) {
+					background-position: center 100px;
+				}
+			}
+
+
+			.copy {
+				position: relative;
+				height: 100%;
+				padding: 20px 15px;
+				top: 0;
+
+				@include media ($large-screen-up) {
+					position: absolute;
+					padding-top: 0;
+					padding-bottom: 0;
+					padding: 30px 50px;
+				}
+			}
+
+			h2, h3 {
+				font-size: 30px;
+				font-weight: 400;
+				color: white;
+			}
+
+			p {
+				color: white;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+
+				a {
+					background-color: white;
+					text-transform: uppercase;
+					padding: 10px 15px;
+					border-radius: 5px;
+					margin-top: 5px;
+					font-size: 14px;
+					font-weight: 500;
+				}
+			}
+
+			&:first-of-type, &:last-of-type {
+				background-color: #989898;
+
+				&:before {
+					background-image: url('assets/images/tentacle-g.svg');
+				}
+			}
+
+			&:first-of-type {
+
+				&:before {
+					transform: rotate(180deg);
+					transform: scaleX(-1);
+					background-position: right center;
+					background-size: 60%;
+				}
+			}
+
+			&:last-of-type {
+
+				&:before {
+					transform: rotate(0);
+					background-position: right center;
+					background-size: 60%;
+				}
+			}
+		}
+	}
+}
