@@ -32,8 +32,17 @@
 	</nav>
 
 	<header id="masthead" class="site-header" role="banner">
+		<?php 
+		$thumb_id = get_post_thumbnail_id();
+		$thumb_url_array = wp_get_attachment_image_src($thumb_id, 'full', true);
+		if ($thumb_url_array[0]) {
+			$thumb_url = $thumb_url_array[0];
+		} else {
+			$thumb_url = get_stylesheet_uri() . '/assets/images/inner-image.svg';
+		}
 
-		<div class="caption">
+		?>
+		<div class="caption" <?php if ($thumb_url): ?>style="background-image:url(<?php echo $thumb_url; ?>);"<?php endif; ?>>
 			<div class="table">
 				<div class="cell middle">
 
