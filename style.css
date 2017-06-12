@@ -1166,14 +1166,14 @@ a {
 /*===============================
 =            GLOBNAL            =
 ===============================*/
-.welcome {
+.home {
   background: #FDE5BF;
   height: 100vh; }
-  .welcome #page, .welcome #content {
+  .home #page, .home #content {
     height: 100%; }
-    .welcome #page img, .welcome #content img {
+    .home #page img, .home #content img {
       width: 230px; }
-    .welcome #page h3, .welcome #content h3 {
+    .home #page h3, .home #content h3 {
       margin: 30px 0 0 0;
       font-size: 20px; }
 
@@ -1372,47 +1372,47 @@ h2 {
 /*=============================
 =            HOME             =
 =============================*/
-.home #masthead .caption {
+.homepage #masthead .caption {
   background-image: url(assets/images/home-image.svg);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 10px;
   background-size: 70%; }
   @media screen and (min-width: 600px) {
-    .home #masthead .caption {
+    .homepage #masthead .caption {
       background-position-y: 10px;
       background-size: 57%; } }
   @media screen and (min-width: 1024px) {
-    .home #masthead .caption {
+    .homepage #masthead .caption {
       background-position-y: 40px;
       background-size: 67%; } }
-  .home #masthead .caption img {
+  .homepage #masthead .caption img {
     width: 50%;
     display: block; }
     @media screen and (min-width: 1024px) {
-      .home #masthead .caption img {
+      .homepage #masthead .caption img {
         width: 35%; } }
 
 @media screen and (min-width: 600px) {
-  .home #primary {
+  .homepage #primary {
     background-image: url("assets/images/tentacle-g.svg");
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 560px auto; } }
 
-.home #primary .entry-content {
+.homepage #primary .entry-content {
   padding: 40px 0;
   text-align: center; }
   @media screen and (min-width: 600px) {
-    .home #primary .entry-content {
+    .homepage #primary .entry-content {
       text-align: left; } }
-  .home #primary .entry-content h1 {
+  .homepage #primary .entry-content h1 {
     text-transform: uppercase; }
 
-.home .columns {
+.homepage .columns {
   float: left;
   width: 100%; }
-  .home .columns .column {
+  .homepage .columns .column {
     width: 100%;
     float: left;
     text-align: center;
@@ -1422,14 +1422,14 @@ h2 {
     background-color: #696969;
     overflow: hidden; }
     @media screen and (min-width: 600px) {
-      .home .columns .column {
+      .homepage .columns .column {
         height: 580px;
         width: 33.333%; } }
     @media screen and (min-width: 1024px) {
-      .home .columns .column {
+      .homepage .columns .column {
         width: 33.333%;
         height: 430px; } }
-    .home .columns .column:before {
+    .homepage .columns .column:before {
       content: "";
       position: absolute;
       background-image: url("assets/images/tentacle-l-up.svg");
@@ -1441,28 +1441,28 @@ h2 {
       left: 0;
       background-position: center bottom; }
       @media screen and (min-width: 1024px) {
-        .home .columns .column:before {
+        .homepage .columns .column:before {
           background-position: center 100px; } }
-    .home .columns .column .copy {
+    .homepage .columns .column .copy {
       position: relative;
       height: 100%;
       padding: 20px 15px;
       top: 0; }
       @media screen and (min-width: 1024px) {
-        .home .columns .column .copy {
+        .homepage .columns .column .copy {
           position: absolute;
           padding-top: 0;
           padding-bottom: 0;
           padding: 30px 50px; } }
-    .home .columns .column h2, .home .columns .column h3 {
+    .homepage .columns .column h2, .homepage .columns .column h3 {
       font-size: 30px;
       font-weight: 400;
       color: white; }
-    .home .columns .column p {
+    .homepage .columns .column p {
       color: white; }
-      .home .columns .column p:last-of-type {
+      .homepage .columns .column p:last-of-type {
         margin-bottom: 0; }
-      .home .columns .column p a {
+      .homepage .columns .column p a {
         background-color: white;
         text-transform: uppercase;
         padding: 10px 15px;
@@ -1470,16 +1470,16 @@ h2 {
         margin-top: 5px;
         font-size: 14px;
         font-weight: 500; }
-    .home .columns .column:first-of-type, .home .columns .column:last-of-type {
+    .homepage .columns .column:first-of-type, .homepage .columns .column:last-of-type {
       background-color: #989898; }
-      .home .columns .column:first-of-type:before, .home .columns .column:last-of-type:before {
+      .homepage .columns .column:first-of-type:before, .homepage .columns .column:last-of-type:before {
         background-image: url("assets/images/tentacle-g.svg"); }
-    .home .columns .column:first-of-type:before {
+    .homepage .columns .column:first-of-type:before {
       transform: rotate(180deg);
       transform: scaleX(-1);
       background-position: right center;
       background-size: 60%; }
-    .home .columns .column:last-of-type:before {
+    .homepage .columns .column:last-of-type:before {
       transform: rotate(0);
       background-position: right center;
       background-size: 60%; }

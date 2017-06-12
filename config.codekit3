@@ -27,12 +27,6 @@
 		"oAP": "\/404.php",
 		"oF": 0
 		},
-	"\/__front-page.php": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/__front-page.php",
-		"oF": 0
-		},
 	"\/archive.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -2110,6 +2104,12 @@
 		"oAP": "\/footer.php",
 		"oF": 0
 		},
+	"\/front-page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/front-page.php",
+		"oF": 0
+		},
 	"\/functions.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -2182,10 +2182,10 @@
 		"oAP": "\/LICENSE",
 		"oF": 0
 		},
-	"\/page-home.php": {
+	"\/page-homepage.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/page-home.php",
+		"oAP": "\/page-homepage.php",
 		"oF": 0
 		},
 	"\/page-welcome.php": {
