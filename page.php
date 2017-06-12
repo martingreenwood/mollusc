@@ -38,9 +38,9 @@ get_header(); ?>
 			<div class="span6">
 				<h2>To find out more</h2>
 				<p>We would be more than happy to discuss your requirements, or provide more information on our services.</p>
-				<p>Email: emily @octopoda.com<br>
-				Tel: 07712 345678</p>
-				<a href="<?php echo home_url('/contact-us'); ?>">Enquire Online</a>
+				<p>Email: <a href="mailto:emily@octopodapa.com">emily@octopodapa.com</a><br>
+				<a href="tel:07738495216">Tel: 07738 495216</a></p>
+				<a class="more" href="<?php echo home_url('/contact-us'); ?>">Enquire Online</a>
 			</div>
 
 		</div>
