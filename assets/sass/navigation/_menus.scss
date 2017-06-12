@@ -14,7 +14,7 @@
 	}
 
 	.menu-main-menu-container {
-		@include outer-container();
+		@include outer-container(100%);
 		padding: 0 15px;
 		
 		@include media ($large-screen-up) {

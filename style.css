@@ -606,7 +606,7 @@ a {
       #site-navigation .nav-menu {
         display: block; } }
   #site-navigation .menu-main-menu-container {
-    max-width: 1200px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px; }
