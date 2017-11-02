@@ -1,29 +1,57 @@
 <?php
 /**
- * The template for displaying welcome splah page
+ * The template for displaying all pages
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  * @package mollusc
  */
 
-get_header('welcome'); ?>
+get_header(); ?>
 
-<div class="table">
-	<div class="cell middle">
-		<center>
+	<?php get_template_part( 'partials/homepage', 'slider' ); ?>
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main container" role="main">
+
 			<?php
-			if ( function_exists( 'the_custom_logo' ) ) {
-				the_custom_logo();
-			} else {
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/home' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			}
-			?>
-			<h3><a href="<?php echo home_url( '/home' ); ?>">ENTER SITE</a></h3>
-		</center>
-	</div>
-</div>
+			while ( have_posts() ) : the_post();
 
-<?php get_footer('welcome');
+				get_template_part( 'template-parts/content', 'homepage' );
+
+			endwhile; // End of the loop.
+			?>
+
+		</main>
+
+		<div class="columns">
+
+		<?php
+		if( have_rows('columns') ):
+			while ( have_rows('columns') ) : the_row();
+				?>
+				<div class="column">
+					<div class="copy">
+						<div class="table">
+							<div class="cell middle">
+							<?php the_sub_field('column_content'); ?>
+							</div>
+						</div>
+					</div>
+				</div>
+				<?php
+			endwhile;
+		endif;
+		?>
+
+		</div>
+
+	</div>
+
+<?php
+get_footer();

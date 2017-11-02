@@ -1166,17 +1166,6 @@ a {
 /*===============================
 =            GLOBNAL            =
 ===============================*/
-.home {
-  background: #FDE5BF;
-  height: 100vh; }
-  .home #page, .home #content {
-    height: 100%; }
-    .home #page img, .home #content img {
-      width: 230px; }
-    .home #page h3, .home #content h3 {
-      margin: 30px 0 0 0;
-      font-size: 20px; }
-
 #masthead {
   position: relative;
   float: left;
@@ -1372,47 +1361,47 @@ h2 {
 /*=============================
 =            HOME             =
 =============================*/
-.homepage #masthead .caption {
+.home #masthead .caption {
   background-image: url(assets/images/home-image.svg);
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 10px;
   background-size: 90%; }
   @media screen and (min-width: 600px) {
-    .homepage #masthead .caption {
+    .home #masthead .caption {
       background-position-y: -9px;
       background-size: 77%; } }
   @media screen and (min-width: 1024px) {
-    .homepage #masthead .caption {
+    .home #masthead .caption {
       background-position-y: 40px;
       background-size: 100%; } }
-  .homepage #masthead .caption img {
+  .home #masthead .caption img {
     width: 50%;
     display: block; }
     @media screen and (min-width: 1024px) {
-      .homepage #masthead .caption img {
+      .home #masthead .caption img {
         width: 35%; } }
 
 @media screen and (min-width: 600px) {
-  .homepage #primary {
+  .home #primary {
     background-image: url("assets/images/tentacle-g.svg");
     background-position: right center;
     background-repeat: no-repeat;
     background-size: 560px auto; } }
 
-.homepage #primary .entry-content {
+.home #primary .entry-content {
   padding: 40px 0;
   text-align: center; }
   @media screen and (min-width: 600px) {
-    .homepage #primary .entry-content {
+    .home #primary .entry-content {
       text-align: left; } }
-  .homepage #primary .entry-content h1 {
+  .home #primary .entry-content h1 {
     text-transform: uppercase; }
 
-.homepage .columns {
+.home .columns {
   float: left;
   width: 100%; }
-  .homepage .columns .column {
+  .home .columns .column {
     width: 100%;
     float: left;
     text-align: center;
@@ -1422,14 +1411,14 @@ h2 {
     background-color: #696969;
     overflow: hidden; }
     @media screen and (min-width: 600px) {
-      .homepage .columns .column {
+      .home .columns .column {
         height: 580px;
         width: 33.333%; } }
     @media screen and (min-width: 1024px) {
-      .homepage .columns .column {
+      .home .columns .column {
         width: 33.333%;
         height: 430px; } }
-    .homepage .columns .column:before {
+    .home .columns .column:before {
       content: "";
       position: absolute;
       background-image: url("assets/images/tentacle-l-up.svg");
@@ -1441,28 +1430,28 @@ h2 {
       left: 0;
       background-position: center bottom; }
       @media screen and (min-width: 1024px) {
-        .homepage .columns .column:before {
+        .home .columns .column:before {
           background-position: center 100px; } }
-    .homepage .columns .column .copy {
+    .home .columns .column .copy {
       position: relative;
       height: 100%;
       padding: 20px 15px;
       top: 0; }
       @media screen and (min-width: 1024px) {
-        .homepage .columns .column .copy {
+        .home .columns .column .copy {
           position: absolute;
           padding-top: 0;
           padding-bottom: 0;
           padding: 30px 50px; } }
-    .homepage .columns .column h2, .homepage .columns .column h3 {
+    .home .columns .column h2, .home .columns .column h3 {
       font-size: 30px;
       font-weight: 400;
       color: white; }
-    .homepage .columns .column p {
+    .home .columns .column p {
       color: white; }
-      .homepage .columns .column p:last-of-type {
+      .home .columns .column p:last-of-type {
         margin-bottom: 0; }
-      .homepage .columns .column p a {
+      .home .columns .column p a {
         background-color: white;
         text-transform: uppercase;
         padding: 10px 15px;
@@ -1470,16 +1459,16 @@ h2 {
         margin-top: 5px;
         font-size: 14px;
         font-weight: 500; }
-    .homepage .columns .column:first-of-type, .homepage .columns .column:last-of-type {
+    .home .columns .column:first-of-type, .home .columns .column:last-of-type {
       background-color: #989898; }
-      .homepage .columns .column:first-of-type:before, .homepage .columns .column:last-of-type:before {
+      .home .columns .column:first-of-type:before, .home .columns .column:last-of-type:before {
         background-image: url("assets/images/tentacle-g.svg"); }
-    .homepage .columns .column:first-of-type:before {
+    .home .columns .column:first-of-type:before {
       transform: rotate(180deg);
       transform: scaleX(-1);
       background-position: right center;
       background-size: 60%; }
-    .homepage .columns .column:last-of-type:before {
+    .home .columns .column:last-of-type:before {
       transform: rotate(0);
       background-position: right center;
       background-size: 60%; }
