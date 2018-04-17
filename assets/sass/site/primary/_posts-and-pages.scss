@@ -185,20 +185,24 @@ h2 {
 	padding: 35px 0;
 	position: relative;
 	text-align: center;
+	background-color: #adabab;
 
 	@include media ($medium-screen-up) {
 		padding: 70px 0;
-		text-align: left;
+		//text-align: left;
 	}
 
 	@include media ($large-screen-up) {
-		padding: 150px 0;
+		padding: 100px 0;
+	}
+
+	.container {
+		position: relative;
 	}
 
 	&:before {
 		content:"";
 		position: absolute;
-		background-color: #adabab;
 		background-image: url('assets/images/tentacle-g.svg');
 		background-repeat: no-repeat;
 		background-size: 80%;
@@ -209,7 +213,8 @@ h2 {
 		transform: rotate(180deg);
 		transform: scaleX(-1);
 		background-position: 100% 50%;
-		z-index: -1;
+		z-index: 0;
+		opacity: 0.8;
 
 		@include media ($large-screen-up) {
 			background-size: 40%;
@@ -229,6 +234,7 @@ h2 {
 		background-color: $brand-primary;
 		color: white;
 		text-transform: uppercase;
+		display: inline-block;
 		font-size: 14px;
 		padding: 10px 15px;
 		border-radius: 5px;

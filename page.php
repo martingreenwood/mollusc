@@ -32,15 +32,29 @@ get_header(); ?>
 	
 		<div class="container">
 
-			<div class="span6">
-				&nbsp;<!-- pushes it to the middle -->
+			<?php $shortcode = get_field( 'facebook_feed', 'options' ); ?>
+			<?php if ($shortcode): ?>
+			<div class="row">
+				<?php echo do_shortcode( $shortcode ); ?>
 			</div>
-			<div class="span6">
-				<h2>To find out more</h2>
-				<p>We would be more than happy to discuss your requirements, or provide more information on our services.</p>
-				<p>Email: <a href="mailto:emily@octopodapa.com">emily@octopodapa.com</a><br>
-				<a href="tel:07738495216">Tel: 07738 495216</a></p>
-				<a class="more" href="<?php echo home_url('/contact-us'); ?>">Enquire Online</a>
+			<?php endif; ?>
+
+			<div class="row">
+
+				<div class="span3">
+					&nbsp;<!-- pushes it to the middle -->
+				</div>
+				<div class="span6">
+					<h2>To find out more</h2>
+					<p>We would be more than happy to discuss your requirements, or provide more information on our services.</p>
+					<p>Email: <a href="mailto:emily@octopodapa.com">emily@octopodapa.com</a><br>
+					<a href="tel:07738495216">Tel: 07738 495216</a></p>
+					<a class="more" href="<?php echo home_url('/contact-us'); ?>">Enquire Online</a>
+				</div>
+				<div class="span3">
+					&nbsp;<!-- pushes it to the middle -->
+				</div>
+
 			</div>
 
 		</div>

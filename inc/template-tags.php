@@ -120,3 +120,10 @@ function mollusc_category_transient_flusher() {
 }
 add_action( 'edit_category', 'mollusc_category_transient_flusher' );
 add_action( 'save_post',     'mollusc_category_transient_flusher' );
+
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}

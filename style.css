@@ -1286,18 +1286,19 @@ h2 {
 .cta {
   padding: 35px 0;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  background-color: #adabab; }
   @media screen and (min-width: 600px) {
     .cta {
-      padding: 70px 0;
-      text-align: left; } }
+      padding: 70px 0; } }
   @media screen and (min-width: 1024px) {
     .cta {
-      padding: 150px 0; } }
+      padding: 100px 0; } }
+  .cta .container {
+    position: relative; }
   .cta:before {
     content: "";
     position: absolute;
-    background-color: #adabab;
     background-image: url("assets/images/tentacle-g.svg");
     background-repeat: no-repeat;
     background-size: 80%;
@@ -1308,7 +1309,8 @@ h2 {
     transform: rotate(180deg);
     transform: scaleX(-1);
     background-position: 100% 50%;
-    z-index: -1; }
+    z-index: 0;
+    opacity: 0.8; }
     @media screen and (min-width: 1024px) {
       .cta:before {
         background-size: 40%; } }
@@ -1321,6 +1323,7 @@ h2 {
     background-color: #00344a;
     color: white;
     text-transform: uppercase;
+    display: inline-block;
     font-size: 14px;
     padding: 10px 15px;
     border-radius: 5px;

@@ -7,7 +7,7 @@
 		"uuidString": "219D5BA5-FC7B-4240-B9BE-2F335F0ED427"
 		}
 	],
-"creatorBuild": "26097",
+"creatorBuild": "26680",
 "files": {
 	"\/.jscsrc": {
 		"cB": 0,
@@ -29,6 +29,46 @@
 		"oA": 2,
 		"oAP": "\/404.php",
 		"oF": 0
+		},
+	"\/acf-json\/group_59133792adf39.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_59133792adf39-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_59142f1f21029.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_59142f1f21029-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_591441691b093.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_591441691b093-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_59144217e6f13.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_59144217e6f13-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_5ad5b2ee5d0c4.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_5ad5b2ee5d0c4-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
 		},
 	"\/archive.php": {
 		"cB": 0,
@@ -109,6 +149,7 @@
 	"\/assets\/images\/inner-banner.jpg": {
 		"ft": 16384,
 		"iS": 113075,
+		"jF": 0,
 		"oA": 0,
 		"oAP": "\/assets\/images\/inner-banner.jpg",
 		"oF": 0,
@@ -2146,13 +2187,6 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
-	"\/inc\/custom-header.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/inc\/custom-header.php",
-		"oF": 0
-		},
 	"\/inc\/customizer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2365,7 +2399,8 @@
 	"creationDate": 515501093,
 	"displayValue": "Octopodapa",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "meme-jake"
+	"iconImageName": "meme-jake",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2373,6 +2408,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -2936,6 +2972,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -4163,6 +4203,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
